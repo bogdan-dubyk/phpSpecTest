@@ -1,0 +1,8 @@
+services:
+    app_converter:
+        class: AppBundle\Service\Convert
+        arguments:
+            convert_handler: @app_convert_handler
+
+    app_convert_handler:
+        class: AppBundle\Service\Converter\ConvertHandler

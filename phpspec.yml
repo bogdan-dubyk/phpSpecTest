@@ -1,0 +1,17 @@
+code_generation: true #default true
+stop_on_failure: true
+formatter.name: progress # default progress. [progress, html, pretty, junit, dot, tap]
+suites:
+    app_suite:
+        namespace: AppBundle
+        src_path: src #default src
+        spec_path:  #default spec
+    api_suit:
+        namespace: ApiBundle
+        src_path: src #default src
+        spec_path: spec #default spec
+
+    # Configure path for all spec tests
+    #    default:
+    #        spec_path: spec #default spec
+    #        src_path: src #default src
